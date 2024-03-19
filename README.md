@@ -1,7 +1,7 @@
 <h1 align="center">Hi I'm Carol Hew</h1>
 <h3 align="center">Is a student at Asia Pacific University of Technology & Innovation</h3>
 
-- 🔭 I’m currently working on [BrainFeed](https://github.com/rainzyyyy/BrainFeed)
+- 🔭 I’m currently working on a project called [BrainFeed](https://github.com/rainzyyyy/BrainFeed)
 
 - 🌱 I’m currently learning **Java, MongoDB, Node.js**
 
