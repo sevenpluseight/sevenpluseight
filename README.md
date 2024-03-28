@@ -2,7 +2,7 @@
 
 - 🔭 I’m currently working on a small project called [BrainFeed](https://github.com/rainzyyyy/BrainFeed)
 
-- 🌱 I’m currently learning **Java, MongoDB, Node.js**
+- 🌱 I’m currently learning **Java, Node.js, React**
 
 - 📫 You can reach me at **hew78pikrou@gmail.com**
 
