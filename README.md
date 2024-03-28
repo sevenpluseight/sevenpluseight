@@ -9,6 +9,6 @@
 <h3>Languages and Tools:</h3>
 <p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,html,css,js,php,mysql,figma,git"/>
+    <img src="https://skillicons.dev/icons?i=py,html,css,js,php,mongodb,mysql,figma,git"/>
   </a>
 </p>
