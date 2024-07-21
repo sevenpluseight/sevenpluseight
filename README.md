@@ -7,6 +7,6 @@
 <h4>Skills:</h4>
 <p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,html,java,js,php,css,mongodb,mysql,figma,git&theme=dark"/>
+    <img src="https://skillicons.dev/icons?i=py,java,js,php,html,css,mongodb,mysql,figma,git&theme=dark"/>
   </a>
 </p>
