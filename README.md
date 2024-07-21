@@ -2,7 +2,7 @@
 
 - ⚡I’m currently learning **Java, Node.js, React**
 
-- 📬[Email](mailto:hew78pikrou@gmail.com)
+- 📬[Email](mailto:hew78pikrou@gmail.com) | <a href="Hew Pik Rou - CV.pdf" target="_blank">CV</a>
 
 <h4>Skills:</h4>
 <p>
