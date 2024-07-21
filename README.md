@@ -1,12 +1,12 @@
 <h1 align="center">I'm Carol Hew :headphones:</h1>
 
-- 🌱 I’m currently learning **Java, Node.js, React**
+- ⚡I’m currently learning **Java, Node.js, React**
 
-- 📫 You can reach me at **hew78pikrou@gmail.com**
+- 📬[Email](mailto:hew78pikrou@gmail.com)
 
-<h3>Languages and Tools:</h3>
+<h4>Skills:</h4>
 <p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,html,css,js,php,mongodb,mysql,figma,git"/>
+    <img src="https://skillicons.dev/icons?i=py,html,java,js,php,css,mongodb,mysql,figma,git&theme=dark"/>
   </a>
 </p>
