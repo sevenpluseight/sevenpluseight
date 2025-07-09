@@ -1,7 +1,9 @@
 <h1 align="center">I'm Carol Hew :headphones:</h1>
 
 - 🎓 Currently pursuing in Information and Communications Technology with a specialization in Software Engineering
-- 📧 Feel free to reach me at: [hew78pikrou@gmail.com](mailto:hew78pikrou@gmail.com)
+- 💼 Passionate about building impactful software and beautiful, functional user experiences.
+
+> 📌 [Check Out My Portfolio](https://carol-hew.my.canva.site/justaportfolio)
 
 <h4>Language & Framework:</h4>
 <p>
