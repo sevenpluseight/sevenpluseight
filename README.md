@@ -1,30 +1,53 @@
-<h1 align="center">I'm Carol Hew :headphones:</h1>
+<div align="center">
 
-- 🎓 Currently pursuing in Information and Communications Technology with a specialization in Software Engineering
-- 💼 Passionate about building impactful software and beautiful, functional user experiences.
+<h1>I'm Carol Hew :headphones:</h1>
 
-> 📌 [Check Out My Portfolio](https://carol-hew.my.canva.site/justaportfolio)
+🎓 Currently pursuing in Information and Communications Technology with a specialization in Software Engineering
+<br>
+💼 Passionate about building impactful software and beautiful, functional user experiences.
 
-<h4>Language & Framework:</h4>
-<p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,java,js,php,ts,html,css,tailwind,&theme=dark"/>
-  </a>
-</p>
-<p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,spring,nextjs&theme=dark"/>
-  </a>
-</p>
+<a href="https://carol-hew.my.canva.site/justaportfolio" target="_blank">
+  🌐 Check Out My Portfolio
+</a>
 
-<h4>Database & Tool:</h4>
-<p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite&theme=dark"/>
-  </a>
-</p>
-<p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=figma,gitlab,notion,git&theme=dark"/>
-  </a>
-</p>
+</div>
+
+---
+
+<div align="center">
+
+### 📊 GitHub Highlights
+
+<img src="https://streak-stats.demolab.com?user=sevenpluseight&theme=tokyonight&hide_border=true" height="160"/>  
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sevenpluseight&layout=compact&theme=tokyonight&hide_border=true" height="220"/>  
+
+</div>
+
+---
+
+<div align="center">
+
+### ⚡ Tech Stack
+
+<table>
+<tr>
+<td align="center" width="50%">
+  
+**Languages & Frameworks**  
+<br><br>
+<img src="https://skillicons.dev/icons?i=py,java,js,ts,php,cpp,dart&theme=dark" />
+<img src="https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs,spring,flutter&theme=dark" />
+
+</td>
+<td align="center" width="50%">
+  
+**Databases & Tools**  
+<br><br>
+<img src="https://skillicons.dev/icons?i=mysql,sqlite,mongodb&theme=dark" /><br>
+<img src="https://skillicons.dev/icons?i=git,gitlab,figma,notion,postman&theme=dark" />
+
+</td>
+</tr>
+</table>
+
+</div>
