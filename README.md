@@ -20,7 +20,6 @@
 
 <table>
   <tr>
-    <td><img src="https://streak-stats.demolab.com?user=sevenpluseight&theme=tokyonight&hide_border=true" width="400"/></td>
     <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sevenpluseight&layout=compact&theme=tokyonight&hide_border=true" width="400"/></td>
   </tr>
 </table>
