@@ -46,7 +46,7 @@
   
 **Databases & Tools**  
 <br><br>
-<img src="https://skillicons.dev/icons?i=mysql,sqlite,mongodb&theme=dark" /><br>
+<img src="https://skillicons.dev/icons?i=mysql,sqlite,mongodb,firebase&theme=dark" /><br>
 <img src="https://skillicons.dev/icons?i=git,gitlab,figma,notion,postman,aws&theme=dark" />
 
 </td>
