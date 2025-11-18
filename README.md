@@ -38,7 +38,7 @@
   
 **Languages & Frameworks**  
 <br><br>
-<img src="https://skillicons.dev/icons?i=py,java,js,ts,php,cpp,dart&theme=dark" />
+<img src="https://skillicons.dev/icons?i=py,java,js,ts,php,cpp,dart,vite&theme=dark" />
 <img src="https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs,spring,flutter&theme=dark" />
 
 </td>
