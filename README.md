@@ -6,23 +6,9 @@
 <br>
 💼 Passionate about building impactful software and beautiful, functional user experiences.
 
-<a href="https://carol-hew.my.canva.site/justaportfolio" target="_blank">
+<a href="https://personal-portfolio-gt1mrhxnx-rainzyyyys-projects.vercel.app/" target="_blank">
   🌐 Check Out My Portfolio
 </a>
-
-</div>
-
----
-
-<div align="center">
-
-### 📊 GitHub Highlights
-
-<table>
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sevenpluseight&layout=compact&theme=tokyonight&hide_border=true" width="400"/></td>
-  </tr>
-</table>
 
 </div>
 
