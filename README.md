@@ -6,7 +6,7 @@
 <br>
 💼 Passionate about building impactful software and beautiful, functional user experiences.
 
-<a href="https://personal-portfolio-fawn-beta.vercel.app/" target="_blank">
+<a href="carolhew.vercel.app" target="_blank">
   🌐 Check Out My Portfolio
 </a>
 
