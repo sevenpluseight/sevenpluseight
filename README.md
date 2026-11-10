@@ -14,29 +14,6 @@
 
 ---
 
-<div align="center">
-
-### ⚡ Tech Stack
-
-<table>
-<tr>
-<td align="center" width="50%">
-  
-**Languages & Frameworks**  
-<br><br>
-<img src="https://skillicons.dev/icons?i=py,java,js,ts,php,cpp,dart,vite&theme=dark" />
-<img src="https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs,spring,flutter&theme=dark" />
-
-</td>
-<td align="center" width="50%">
-  
-**Databases & Tools**  
-<br><br>
-<img src="https://skillicons.dev/icons?i=mysql,sqlite,mongodb,firebase&theme=dark" /><br>
-<img src="https://skillicons.dev/icons?i=git,gitlab,figma,notion,postman,aws&theme=dark" />
-
-</td>
-</tr>
-</table>
-
-</div>
+<p align="center">
+  <img src="koi/koi.gif" width="256" alt="GitHub Koi" />
+</p>
