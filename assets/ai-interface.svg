@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="800" height="660"
+     viewBox="0 0 800 660"
+     role="img" aria-label="Carol AI Developer Interface">
+
+  <defs>
+    <style>
+      .base { font-family: 'Segoe UI', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, monospace; }
+      .white { fill: #F1F2F3; }
+      .muted { fill: #9EA2AA; }
+      .faint { fill: #777C85; }
+      .green { fill: #A8C5B4; }
+    </style>
+
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101113"/>
+      <stop offset="100%" stop-color="#191B1F"/>
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#202226"/>
+      <stop offset="100%" stop-color="#191B1E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- MAIN BACKGROUND -->
+  <rect width="800" height="660" rx="18" fill="url(#background)"/>
+  <rect x="0.5" y="0.5" width="799" height="659"
+        rx="17.5" fill="none" stroke="#34363C"/>
+
+  <!-- HEADER -->
+  <rect x="28" y="25" width="44" height="44" rx="12"
+        fill="#303237"/>
+
+  <!-- AI SPARKLE -->
+  <path d="M50 34 L54 44 L64 48 L54 52 L50 62 L46 52 L36 48 L46 44 Z"
+        fill="#E6E7E9"/>
+
+  <text x="85" y="43" class="base white"
+        font-size="19" font-weight="700">CAROL / AI</text>
+
+  <text x="85" y="61" class="mono faint"
+        font-size="10">PERSONAL DEVELOPER INTERFACE</text>
+
+  <circle cx="690" cy="46" r="4" fill="#A8C5B4"/>
+
+  <text x="704" y="50" class="mono green"
+        font-size="11">ONLINE</text>
+
+  <line x1="28" y1="87" x2="772" y2="87"
+        stroke="#34363B"/>
+
+  <!-- CHAT LABEL -->
+  <text x="30" y="117" class="mono faint"
+        font-size="11">01 / AI CONVERSATION</text>
+
+  <!-- USER CHAT -->
+  <rect x="525" y="138" width="245" height="53"
+        rx="13" fill="#2B2D31"/>
+
+  <text x="545" y="169" class="base white"
+        font-size="14">Who is Carol Hew?</text>
+
+  <text x="768" y="211" text-anchor="end"
+        class="mono faint" font-size="10">USER QUERY</text>
+
+  <!-- ASSISTANT AVATAR -->
+  <rect x="30" y="232" width="36" height="36"
+        rx="10" fill="#36383D"/>
+
+  <path d="M48 240 L51 248 L59 251 L51 254 L48 262 L45 254 L37 251 L45 248 Z"
+        fill="#E2E4E6"/>
+
+  <text x="80" y="246" class="mono white"
+        font-size="12" font-weight="bold">CAROL.AI</text>
+
+  <text x="80" y="264" class="mono green"
+        font-size="10">RESPONSE GENERATED</text>
+
+  <!-- ASSISTANT RESPONSE -->
+  <rect x="79" y="284" width="691" height="150"
+        rx="14" fill="url(#panel)" stroke="#37393F"/>
+
+  <text x="100" y="324" class="base white"
+        font-size="28" font-weight="bold">
+    Hello, world. I'm Carol.
+  </text>
+
+  <text x="100" y="354" class="base muted" font-size="15">
+    Year 3 ICT Student · Software Engineering
+  </text>
+
+  <text x="100" y="382" class="base muted" font-size="13">
+    Building meaningful software and intuitive digital experiences.
+  </text>
+
+  <text x="100" y="405" class="base faint" font-size="12">
+    Curious by nature. Creative by choice. Always learning.
+  </text>
+
+  <!-- DEVELOPER PROFILE -->
+  <text x="30" y="469" class="mono faint"
+        font-size="11">02 / DEVELOPER PROFILE</text>
+
+  <!-- EDITOR PANEL -->
+  <rect x="30" y="487" width="740" height="147"
+        rx="13" fill="#202226" stroke="#393B40"/>
+
+  <!-- EDITOR HEADER -->
+  <circle cx="49" cy="506" r="4" fill="#777A80"/>
+  <circle cx="63" cy="506" r="4" fill="#777A80"/>
+  <circle cx="77" cy="506" r="4" fill="#777A80"/>
+
+  <text x="103" y="510" class="mono muted"
+        font-size="11">developer_profile.ts</text>
+
+  <line x1="30" y1="525" x2="770" y2="525"
+        stroke="#34363A"/>
+
+  <!-- CODE -->
+  <g font-family="Consolas, monospace" font-size="12">
+    <text x="48" y="548">
+      <tspan fill="#A8ADB6">const</tspan>
+      <tspan fill="#E4E5E7"> developer = {</tspan>
+    </text>
+
+    <text x="68" y="567">
+      <tspan fill="#BFC2C8">name:</tspan>
+      <tspan fill="#A8C5B4"> "Carol Hew"</tspan><tspan fill="#E4E5E7">,</tspan>
+    </text>
+
+    <text x="68" y="586">
+      <tspan fill="#BFC2C8">role:</tspan>
+      <tspan fill="#A8C5B4"> "Software Engineering Student"</tspan><tspan fill="#E4E5E7">,</tspan>
+    </text>
+
+    <text x="68" y="605">
+      <tspan fill="#BFC2C8">status:</tspan>
+      <tspan fill="#A8C5B4"> "Learning, building, evolving"</tspan>
+    </text>
+
+    <text x="48" y="624" fill="#E4E5E7">};</text>
+  </g>
+
+  <!-- FOOTER -->
+  <text x="30" y="649" class="mono faint" font-size="9">
+    CAROL.AI / PROFILE INITIALIZED
+  </text>
+
+  <text x="770" y="649" text-anchor="end"
+        class="mono green" font-size="9">SYSTEM READY</text>
+
+</svg>
