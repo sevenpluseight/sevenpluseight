@@ -1,23 +1,36 @@
 
 <div align="center">
 
-  <h1>Hi, I'm Carol Hew 🎧</h1>
+  <!-- AI DEVELOPER INTERFACE -->
+  <img
+    src="./assets/ai-interface.svg"
+    alt="Carol AI Developer Interface"
+    width="800"
+  />
 
-  <p>
-    🎓 ICT Student specializing in Software Engineering (Year 3)
-    <br>
-    💻 Building meaningful software & intuitive digital experiences
-  </p>
+  <br/><br/>
 
+  <!-- PORTFOLIO -->
   <a href="https://carolhew.vercel.app">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20My%20Website-8A63D2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+    <img
+      src="https://img.shields.io/badge/Explore%20Portfolio-303237?style=for-the-badge&logo=vercel&logoColor=white"
+      alt="Visit My Portfolio"
+    />
   </a>
 
-  <br><br>
+  <br/><br/><br/>
 
-  <img src="koi/koi.gif" width="240" alt="GitHub Koi" />
+  <!-- KOI COMPANION -->
+  <img
+    src="koi/koi.gif"
+    width="190"
+    alt="GitHub Koi Companion"
+  />
 
-  <br>
-  <sub>Growing with every contribution 🐟</sub>
+  <br/>
+
+  <sub>
+    <code>companion.exe</code> · Growing with every contribution 🐟
+  </sub>
 
 </div>
