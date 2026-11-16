@@ -64,11 +64,15 @@
       }
     </style>
 
+    <!-- MAIN BACKGROUND -->
+
     <linearGradient id="background"
                     x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#101113"/>
       <stop offset="100%" stop-color="#191B1F"/>
     </linearGradient>
+
+    <!-- PANEL BACKGROUND -->
 
     <linearGradient id="panel"
                     x1="0" y1="0" x2="1" y2="1">
@@ -76,26 +80,95 @@
       <stop offset="100%" stop-color="#1A1C20"/>
     </linearGradient>
 
+    <!-- SAGE ACCENT -->
+
     <linearGradient id="accent"
                     x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#A8C5B4"/>
       <stop offset="100%" stop-color="#647C70"/>
     </linearGradient>
 
+    <!-- AMBIENT GLOW -->
+
     <radialGradient id="glow">
-      <stop offset="0%" stop-color="#A8C5B4" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#A8C5B4" stop-opacity="0"/>
+      <stop offset="0%"
+            stop-color="#A8C5B4"
+            stop-opacity="0.16"/>
+      <stop offset="100%"
+            stop-color="#A8C5B4"
+            stop-opacity="0"/>
     </radialGradient>
+
+    <!-- INTRODUCTION GRID -->
+
+    <pattern id="intro-grid"
+             width="24" height="24"
+             patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24"
+            fill="none"
+            stroke="#A8C5B4"
+            stroke-width="0.5"
+            opacity="0.16"/>
+    </pattern>
+
+    <!-- GRID GRADIENT FADE -->
+
+    <linearGradient id="intro-grid-fade"
+                    x1="0%" y1="0%"
+                    x2="100%" y2="75%">
+      <stop offset="0%"
+            stop-color="white"
+            stop-opacity="0.05"/>
+      <stop offset="45%"
+            stop-color="white"
+            stop-opacity="0.3"/>
+      <stop offset="100%"
+            stop-color="white"
+            stop-opacity="0.9"/>
+    </linearGradient>
+
+    <mask id="intro-grid-mask"
+          maskUnits="userSpaceOnUse">
+      <rect x="30" y="284"
+            width="740" height="162"
+            fill="url(#intro-grid-fade)"/>
+    </mask>
+
+    <!-- INTRODUCTION GLOW -->
+
+    <radialGradient id="intro-glow">
+      <stop offset="0%"
+            stop-color="#A8C5B4"
+            stop-opacity="0.14"/>
+      <stop offset="55%"
+            stop-color="#789B87"
+            stop-opacity="0.06"/>
+      <stop offset="100%"
+            stop-color="#789B87"
+            stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- CLIPPING -->
 
     <clipPath id="frame-clip">
       <rect width="800" height="1070" rx="18"/>
     </clipPath>
+
+    <clipPath id="intro-clip">
+      <rect x="30" y="284"
+            width="740" height="162"
+            rx="14"/>
+    </clipPath>
+
   </defs>
 
+  <!-- ===================================== -->
   <!-- BACKGROUND -->
+  <!-- ===================================== -->
 
   <rect width="800" height="1070"
-        rx="18" fill="url(#background)"/>
+        rx="18"
+        fill="url(#background)"/>
 
   <rect x="0.5" y="0.5"
         width="799" height="1069"
@@ -110,34 +183,50 @@
              rx="380" ry="190"
              fill="url(#glow)"
              opacity="0.6">
+
       <animate attributeName="opacity"
                values="0.35;0.65;0.35"
                dur="8s"
                repeatCount="indefinite"/>
+
     </ellipse>
   </g>
 
+  <!-- ===================================== -->
   <!-- HEADER -->
+  <!-- ===================================== -->
 
   <rect x="28" y="25"
         width="44" height="44"
-        rx="12" fill="#303237"/>
+        rx="12"
+        fill="#303237"/>
+
+  <!-- AI ICON GLOW -->
 
   <circle cx="50" cy="47"
-          r="22" fill="url(#glow)">
+          r="22"
+          fill="url(#glow)">
+
     <animate attributeName="opacity"
              values="0.3;1;0.3"
              dur="4s"
              repeatCount="indefinite"/>
+
   </circle>
+
+  <!-- AI ICON -->
 
   <path d="M50 34 L54 44 L64 48 L54 52 L50 62 L46 52 L36 48 L46 44 Z"
         fill="#E6E7E9">
+
     <animate attributeName="opacity"
              values="0.55;1;0.55"
              dur="3.2s"
              repeatCount="indefinite"/>
+
   </path>
+
+  <!-- BRANDING -->
 
   <text x="85" y="43"
         class="base white"
@@ -155,24 +244,31 @@
   <!-- LIVE STATUS -->
 
   <circle cx="690" cy="46"
-          r="8" fill="#A8C5B4"
+          r="8"
+          fill="#A8C5B4"
           opacity="0">
+
     <animate attributeName="r"
              values="4;11;4"
              dur="2.8s"
              repeatCount="indefinite"/>
+
     <animate attributeName="opacity"
              values="0.3;0;0"
              dur="2.8s"
              repeatCount="indefinite"/>
+
   </circle>
 
   <circle cx="690" cy="46"
-          r="4" fill="#A8C5B4">
+          r="4"
+          fill="#A8C5B4">
+
     <animate attributeName="opacity"
              values="1;0.55;1"
              dur="2.8s"
              repeatCount="indefinite"/>
+
   </circle>
 
   <text x="704" y="50"
@@ -185,7 +281,9 @@
         x2="772" y2="87"
         stroke="#34363B"/>
 
+  <!-- ===================================== -->
   <!-- 01 / AI CONVERSATION -->
+  <!-- ===================================== -->
 
   <text x="30" y="117"
         class="mono faint"
@@ -205,7 +303,8 @@
 
     <rect x="515" y="138"
           width="255" height="53"
-          rx="13" fill="#2B2D31"
+          rx="13"
+          fill="#2B2D31"
           stroke="#383B40"/>
 
     <text x="535" y="169"
@@ -235,14 +334,17 @@
 
     <rect x="30" y="232"
           width="36" height="36"
-          rx="10" fill="#36383D"/>
+          rx="10"
+          fill="#36383D"/>
 
     <path d="M48 240 L51 248 L59 251 L51 254 L48 262 L45 254 L37 251 L45 248 Z"
           fill="#E2E4E6">
+
       <animate attributeName="opacity"
                values="0.65;1;0.65"
                dur="3s"
                repeatCount="indefinite"/>
+
     </path>
 
     <text x="80" y="246"
@@ -259,16 +361,21 @@
     </text>
 
     <circle cx="225" cy="261"
-            r="2.5" fill="#A8C5B4">
+            r="2.5"
+            fill="#A8C5B4">
+
       <animate attributeName="opacity"
                values="1;0.15;1"
                dur="2s"
                repeatCount="indefinite"/>
+
     </circle>
 
   </g>
 
-  <!-- INTRODUCTION -->
+  <!-- ===================================== -->
+  <!-- INTRODUCTION / GRADIENT GRID -->
+  <!-- ===================================== -->
 
   <g class="reveal">
 
@@ -278,56 +385,108 @@
              dur="0.9s"
              fill="freeze"/>
 
-    <rect x="79" y="284"
-          width="691" height="162"
+    <!-- CARD BASE -->
+
+    <rect x="30" y="284"
+          width="740" height="162"
           rx="14"
-          fill="url(#panel)"
-          stroke="#37393F"/>
+          fill="url(#panel)"/>
 
-    <rect x="79" y="301"
-          width="3" height="39"
-          rx="1.5"
-          fill="url(#accent)">
-      <animate attributeName="opacity"
-               values="0.5;1;0.5"
-               dur="4s"
-               repeatCount="indefinite"/>
-    </rect>
+    <!-- GRID + GLOW -->
 
-    <text x="101" y="325"
+    <g clip-path="url(#intro-clip)">
+
+      <!-- FADED GRID -->
+
+      <rect x="30" y="284"
+            width="740" height="162"
+            fill="url(#intro-grid)"
+            mask="url(#intro-grid-mask)"/>
+
+      <!-- ANIMATED SAGE GLOW -->
+
+      <ellipse cx="710" cy="318"
+               rx="240" ry="155"
+               fill="url(#intro-glow)">
+
+        <animate attributeName="opacity"
+                 values="0.45;0.85;0.45"
+                 dur="7s"
+                 repeatCount="indefinite"/>
+
+      </ellipse>
+
+    </g>
+
+    <!-- CARD BORDER -->
+
+    <rect x="30" y="284"
+          width="740" height="162"
+          rx="14"
+          fill="none"
+          stroke="#3A403E"/>
+
+    <!-- TOP ACCENT -->
+
+    <line x1="52" y1="285"
+          x2="118" y2="285"
+          stroke="#A8C5B4"
+          stroke-width="2"
+          stroke-linecap="round"
+          opacity="0.8"/>
+
+    <!-- MAIN HEADING -->
+
+    <text x="52" y="326"
           class="base white"
-          font-size="28"
-          font-weight="bold">
+          font-size="27"
+          font-weight="700">
       Hello, world. I'm Carol.
     </text>
 
-    <text x="101" y="356"
+    <!-- SPECIALIZATION -->
+
+    <text x="52" y="353"
           class="base green"
-          font-size="14">
+          font-size="13"
+          font-weight="500">
       ICT Student / Software Engineering
     </text>
 
-    <text x="101" y="386"
+    <!-- DESCRIPTION -->
+
+    <text x="52" y="387"
           class="base muted"
           font-size="13">
-      I build meaningful software and intuitive digital experiences.
+      Building meaningful software and intuitive digital experiences.
     </text>
 
-    <text x="101" y="410"
-          class="base muted"
-          font-size="13">
-      Exploring the intersection of technology, design, and creativity.
-    </text>
+    <!-- PERSONAL TAGLINE -->
 
-    <text x="101" y="431"
+    <text x="52" y="416"
           class="mono faint"
-          font-size="10">
+          font-size="11">
       Curious by nature. Creative by choice. Always learning.
     </text>
 
+    <!-- STATUS INDICATOR -->
+
+    <circle cx="744" cy="310"
+            r="3"
+            fill="#A8C5B4">
+
+      <animate attributeName="opacity"
+               values="1;0.3;1"
+               dur="2.8s"
+               repeatCount="indefinite"/>
+
+    </circle>
+
   </g>
 
+  <!-- ===================================== -->
   <!-- 02 / DEVELOPER PROFILE -->
+  <!-- ===================================== -->
 
   <g class="reveal">
 
@@ -343,6 +502,8 @@
       02 / DEVELOPER PROFILE
     </text>
 
+    <!-- CODE EDITOR -->
+
     <rect x="30" y="497"
           width="740" height="157"
           rx="13"
@@ -351,9 +512,14 @@
 
     <!-- EDITOR HEADER -->
 
-    <circle cx="49" cy="516" r="4" fill="#777A80"/>
-    <circle cx="63" cy="516" r="4" fill="#777A80"/>
-    <circle cx="77" cy="516" r="4" fill="#777A80"/>
+    <circle cx="49" cy="516"
+            r="4" fill="#777A80"/>
+
+    <circle cx="63" cy="516"
+            r="4" fill="#777A80"/>
+
+    <circle cx="77" cy="516"
+            r="4" fill="#777A80"/>
 
     <text x="103" y="520"
           class="mono muted"
@@ -378,18 +544,20 @@
        font-size="10"
        fill="#656A73"
        text-anchor="end">
+
       <text x="56" y="561">1</text>
       <text x="56" y="580">2</text>
       <text x="56" y="599">3</text>
       <text x="56" y="618">4</text>
       <text x="56" y="637">5</text>
+
     </g>
 
     <line x1="68" y1="545"
           x2="68" y2="643"
           stroke="#34363A"/>
 
-    <!-- SOURCE CODE -->
+    <!-- TYPESCRIPT CODE -->
 
     <g class="mono" font-size="12">
 
@@ -422,23 +590,27 @@
 
     </g>
 
-    <!-- BLINKING EDITOR CURSOR -->
+    <!-- BLINKING CURSOR -->
 
     <rect class="cursor"
           x="101" y="624"
           width="7" height="14"
           rx="1"
           fill="#A8C5B4">
+
       <animate attributeName="opacity"
                values="1;1;0;0;1"
                keyTimes="0;0.45;0.5;0.95;1"
                dur="1.2s"
                repeatCount="indefinite"/>
+
     </rect>
 
   </g>
 
+  <!-- ===================================== -->
   <!-- 03 / TECHNICAL CAPABILITIES -->
+  <!-- ===================================== -->
 
   <g class="reveal">
 
@@ -454,12 +626,16 @@
       03 / TECHNICAL CAPABILITIES
     </text>
 
+    <!-- STACK STATUS -->
+
     <circle cx="668" cy="685"
             r="3" fill="#A8C5B4">
+
       <animate attributeName="opacity"
                values="1;0.25;1"
                dur="2.4s"
                repeatCount="indefinite"/>
+
     </circle>
 
     <text x="770" y="689"
@@ -469,7 +645,9 @@
       STACK LOADED
     </text>
 
+    <!-- ================================= -->
     <!-- LANGUAGES -->
+    <!-- ================================= -->
 
     <g class="reveal">
 
@@ -506,6 +684,7 @@
             stroke="#34363A"/>
 
       <g class="chip-text">
+
         <rect class="chip" x="48" y="764" width="70" height="27" rx="7"/>
         <text x="83" y="782">Python</text>
 
@@ -526,11 +705,14 @@
 
         <rect class="chip" x="186" y="801" width="65" height="27" rx="7"/>
         <text x="218.5" y="819">Dart</text>
+
       </g>
 
     </g>
 
+    <!-- ================================= -->
     <!-- WEB & FRAMEWORKS -->
+    <!-- ================================= -->
 
     <g class="reveal">
 
@@ -567,6 +749,7 @@
             stroke="#34363A"/>
 
       <g class="chip-text">
+
         <rect class="chip" x="421" y="764" width="65" height="27" rx="7"/>
         <text x="453.5" y="782">React</text>
 
@@ -590,11 +773,14 @@
 
         <rect class="chip" x="660" y="801" width="68" height="27" rx="7"/>
         <text x="694" y="819">Vite</text>
+
       </g>
 
     </g>
 
+    <!-- ================================= -->
     <!-- DATABASES & SERVICES -->
+    <!-- ================================= -->
 
     <g class="reveal">
 
@@ -631,6 +817,7 @@
             stroke="#34363A"/>
 
       <g class="chip-text">
+
         <rect class="chip" x="48" y="920" width="73" height="27" rx="7"/>
         <text x="84.5" y="938">MySQL</text>
 
@@ -642,11 +829,14 @@
 
         <rect class="chip" x="48" y="957" width="86" height="27" rx="7"/>
         <text x="91" y="975">Firebase</text>
+
       </g>
 
     </g>
 
+    <!-- ================================= -->
     <!-- DEVELOPMENT TOOLS -->
+    <!-- ================================= -->
 
     <g class="reveal">
 
@@ -683,6 +873,7 @@
             stroke="#34363A"/>
 
       <g class="chip-text">
+
         <rect class="chip" x="421" y="920" width="55" height="27" rx="7"/>
         <text x="448.5" y="938">Git</text>
 
@@ -700,13 +891,16 @@
 
         <rect class="chip" x="515" y="957" width="65" height="27" rx="7"/>
         <text x="547.5" y="975">AWS</text>
+
       </g>
 
     </g>
 
   </g>
 
-  <!-- FOOTER -->
+  <!-- ===================================== -->
+  <!-- FOOTER / SYSTEM STATUS -->
+  <!-- ===================================== -->
 
   <line x1="30" y1="1026"
         x2="770" y2="1026"
@@ -718,40 +912,55 @@
     CAROL.AI / PROFILE INITIALIZED
   </text>
 
-  <!-- LOADING / SYSTEM STATUS -->
+  <!-- PROGRESS TRACK -->
 
   <rect x="516" y="1039"
         width="100" height="3"
-        rx="1.5" fill="#303539"/>
+        rx="1.5"
+        fill="#303539"/>
+
+  <!-- ANIMATED PROGRESS -->
 
   <rect class="progress"
         x="516" y="1039"
         width="0" height="3"
-        rx="1.5" fill="#A8C5B4">
+        rx="1.5"
+        fill="#A8C5B4">
+
     <animate attributeName="width"
              from="0" to="100"
              begin="3.4s"
              dur="1.4s"
              fill="freeze"/>
+
   </rect>
 
+  <!-- SYSTEM STATUS DOT -->
+
   <circle cx="669" cy="1044"
-          r="3" fill="#A8C5B4">
+          r="3"
+          fill="#A8C5B4">
+
     <animate attributeName="opacity"
              values="1;0.35;1"
              dur="2.5s"
              repeatCount="indefinite"/>
+
   </circle>
+
+  <!-- SYSTEM READY -->
 
   <text x="770" y="1048"
         text-anchor="end"
         class="mono green"
         font-size="10">
     SYSTEM READY
+
     <animate attributeName="opacity"
              values="0.65;1;0.65"
              dur="3s"
              repeatCount="indefinite"/>
+
   </text>
 
 </svg>
