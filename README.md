@@ -1,4 +1,3 @@
-
 <div align="center">
 
   <!-- AI DEVELOPER INTERFACE -->
@@ -8,7 +7,7 @@
     width="800"
   />
 
-  <br/><br/>
+  <br/>
 
   <!-- PORTFOLIO -->
   <a href="https://carolhew.vercel.app">
@@ -17,20 +16,5 @@
       alt="Visit My Portfolio"
     />
   </a>
-
-  <br/><br/><br/>
-
-  <!-- KOI COMPANION -->
-  <img
-    src="koi/koi.gif"
-    width="190"
-    alt="GitHub Koi Companion"
-  />
-
-  <br/>
-
-  <sub>
-    <code>companion.exe</code> · Growing with every contribution 🐟
-  </sub>
 
 </div>
