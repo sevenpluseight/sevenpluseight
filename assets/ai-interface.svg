@@ -1,9 +1,10 @@
-
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="800" height="660"
-     viewBox="0 0 800 660"
+     width="800" height="1070"
+     viewBox="0 0 800 1070"
      role="img"
-     aria-label="Animated Carol AI Developer Interface">
+     aria-label="Carol Hew AI Developer Profile and Technical Skills">
+
+  <title>Carol AI Developer Interface</title>
 
   <defs>
     <style>
@@ -16,9 +17,33 @@
       }
 
       .white { fill: #F1F2F3; }
-      .muted { fill: #9EA2AA; }
-      .faint { fill: #777C85; }
+      .muted { fill: #A5A9B1; }
+      .faint { fill: #80858E; }
       .green { fill: #A8C5B4; }
+
+      .chip {
+        fill: #2C2F33;
+        stroke: #41454B;
+        stroke-width: 0.8;
+      }
+
+      .chip-text {
+        fill: #CFD3D7;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 10;
+        font-weight: 500;
+        text-anchor: middle;
+      }
+
+      .panel {
+        fill: #202226;
+        stroke: #393B40;
+        stroke-width: 1;
+      }
+
+      .reveal {
+        opacity: 0;
+      }
 
       @media (prefers-reduced-motion: reduce) {
         animate, animateTransform {
@@ -26,6 +51,14 @@
         }
 
         .reveal {
+          opacity: 1;
+        }
+
+        .progress {
+          width: 100px;
+        }
+
+        .cursor {
           opacity: 1;
         }
       }
@@ -39,31 +72,71 @@
 
     <linearGradient id="panel"
                     x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#202226"/>
-      <stop offset="100%" stop-color="#191B1E"/>
+      <stop offset="0%" stop-color="#222428"/>
+      <stop offset="100%" stop-color="#1A1C20"/>
     </linearGradient>
+
+    <linearGradient id="accent"
+                    x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8C5B4"/>
+      <stop offset="100%" stop-color="#647C70"/>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#A8C5B4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#A8C5B4" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="frame-clip">
+      <rect width="800" height="1070" rx="18"/>
+    </clipPath>
   </defs>
 
-  <rect width="800" height="660"
+  <!-- BACKGROUND -->
+
+  <rect width="800" height="1070"
         rx="18" fill="url(#background)"/>
 
   <rect x="0.5" y="0.5"
-        width="799" height="659"
-        rx="17.5" fill="none"
+        width="799" height="1069"
+        rx="17.5"
+        fill="none"
         stroke="#34363C"/>
+
+  <!-- AMBIENT TOP GLOW -->
+
+  <g clip-path="url(#frame-clip)">
+    <ellipse cx="400" cy="-90"
+             rx="380" ry="190"
+             fill="url(#glow)"
+             opacity="0.6">
+      <animate attributeName="opacity"
+               values="0.35;0.65;0.35"
+               dur="8s"
+               repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- HEADER -->
 
   <rect x="28" y="25"
         width="44" height="44"
         rx="12" fill="#303237"/>
 
+  <circle cx="50" cy="47"
+          r="22" fill="url(#glow)">
+    <animate attributeName="opacity"
+             values="0.3;1;0.3"
+             dur="4s"
+             repeatCount="indefinite"/>
+  </circle>
+
   <path d="M50 34 L54 44 L64 48 L54 52 L50 62 L46 52 L36 48 L46 44 Z"
         fill="#E6E7E9">
-
     <animate attributeName="opacity"
              values="0.55;1;0.55"
              dur="3.2s"
              repeatCount="indefinite"/>
-
   </path>
 
   <text x="85" y="43"
@@ -79,14 +152,27 @@
     PERSONAL DEVELOPER INTERFACE
   </text>
 
+  <!-- LIVE STATUS -->
+
+  <circle cx="690" cy="46"
+          r="8" fill="#A8C5B4"
+          opacity="0">
+    <animate attributeName="r"
+             values="4;11;4"
+             dur="2.8s"
+             repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+             values="0.3;0;0"
+             dur="2.8s"
+             repeatCount="indefinite"/>
+  </circle>
+
   <circle cx="690" cy="46"
           r="4" fill="#A8C5B4">
-
     <animate attributeName="opacity"
-             values="1;0.3;1"
-             dur="2.6s"
+             values="1;0.55;1"
+             dur="2.8s"
              repeatCount="indefinite"/>
-
   </circle>
 
   <text x="704" y="50"
@@ -99,26 +185,30 @@
         x2="772" y2="87"
         stroke="#34363B"/>
 
+  <!-- 01 / AI CONVERSATION -->
+
   <text x="30" y="117"
         class="mono faint"
         font-size="11">
     01 / AI CONVERSATION
   </text>
 
-  <g class="reveal" opacity="0">
+  <!-- USER QUERY -->
+
+  <g class="reveal">
 
     <animate attributeName="opacity"
              from="0" to="1"
              begin="0.3s"
-             dur="0.7s"
+             dur="0.6s"
              fill="freeze"/>
 
-    <rect x="525" y="138"
-          width="245" height="53"
-          rx="13"
-          fill="#2B2D31"/>
+    <rect x="515" y="138"
+          width="255" height="53"
+          rx="13" fill="#2B2D31"
+          stroke="#383B40"/>
 
-    <text x="545" y="169"
+    <text x="535" y="169"
           class="base white"
           font-size="14">
       Who is Carol Hew?
@@ -133,7 +223,9 @@
 
   </g>
 
-  <g class="reveal" opacity="0">
+  <!-- AI IDENTITY -->
+
+  <g class="reveal">
 
     <animate attributeName="opacity"
              from="0" to="1"
@@ -146,7 +238,12 @@
           rx="10" fill="#36383D"/>
 
     <path d="M48 240 L51 248 L59 251 L51 254 L48 262 L45 254 L37 251 L45 248 Z"
-          fill="#E2E4E6"/>
+          fill="#E2E4E6">
+      <animate attributeName="opacity"
+               values="0.65;1;0.65"
+               dur="3s"
+               repeatCount="indefinite"/>
+    </path>
 
     <text x="80" y="246"
           class="mono white"
@@ -161,155 +258,500 @@
       RESPONSE GENERATED
     </text>
 
+    <circle cx="225" cy="261"
+            r="2.5" fill="#A8C5B4">
+      <animate attributeName="opacity"
+               values="1;0.15;1"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </circle>
+
   </g>
 
-  <g class="reveal" opacity="0">
+  <!-- INTRODUCTION -->
+
+  <g class="reveal">
 
     <animate attributeName="opacity"
              from="0" to="1"
              begin="1.6s"
-             dur="1s"
+             dur="0.9s"
              fill="freeze"/>
 
     <rect x="79" y="284"
-          width="691" height="150"
+          width="691" height="162"
           rx="14"
           fill="url(#panel)"
           stroke="#37393F"/>
 
-    <text x="100" y="324"
+    <rect x="79" y="301"
+          width="3" height="39"
+          rx="1.5"
+          fill="url(#accent)">
+      <animate attributeName="opacity"
+               values="0.5;1;0.5"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </rect>
+
+    <text x="101" y="325"
           class="base white"
           font-size="28"
           font-weight="bold">
       Hello, world. I'm Carol.
     </text>
 
-    <text x="100" y="354"
-          class="base muted"
-          font-size="15">
-      Year 3 ICT Student · Software Engineering
+    <text x="101" y="356"
+          class="base green"
+          font-size="14">
+      ICT Student / Software Engineering
     </text>
 
-    <text x="100" y="382"
+    <text x="101" y="386"
           class="base muted"
           font-size="13">
-      Building meaningful software and intuitive digital experiences.
+      I build meaningful software and intuitive digital experiences.
     </text>
 
-    <text x="100" y="405"
-          class="base faint"
-          font-size="12">
+    <text x="101" y="410"
+          class="base muted"
+          font-size="13">
+      Exploring the intersection of technology, design, and creativity.
+    </text>
+
+    <text x="101" y="431"
+          class="mono faint"
+          font-size="10">
       Curious by nature. Creative by choice. Always learning.
     </text>
 
   </g>
 
-  <g class="reveal" opacity="0">
+  <!-- 02 / DEVELOPER PROFILE -->
+
+  <g class="reveal">
 
     <animate attributeName="opacity"
              from="0" to="1"
-             begin="2.7s"
-             dur="0.8s"
+             begin="2.5s"
+             dur="0.7s"
              fill="freeze"/>
 
-    <text x="30" y="469"
+    <text x="30" y="479"
           class="mono faint"
           font-size="11">
       02 / DEVELOPER PROFILE
     </text>
 
-    <rect x="30" y="487"
-          width="740" height="147"
+    <rect x="30" y="497"
+          width="740" height="157"
           rx="13"
           fill="#202226"
           stroke="#393B40"/>
 
-    <circle cx="49" cy="506"
-            r="4" fill="#777A80"/>
+    <!-- EDITOR HEADER -->
 
-    <circle cx="63" cy="506"
-            r="4" fill="#777A80"/>
+    <circle cx="49" cy="516" r="4" fill="#777A80"/>
+    <circle cx="63" cy="516" r="4" fill="#777A80"/>
+    <circle cx="77" cy="516" r="4" fill="#777A80"/>
 
-    <circle cx="77" cy="506"
-            r="4" fill="#777A80"/>
-
-    <text x="103" y="510"
+    <text x="103" y="520"
           class="mono muted"
           font-size="11">
       developer_profile.ts
     </text>
 
-    <line x1="30" y1="525"
-          x2="770" y2="525"
+    <text x="750" y="520"
+          text-anchor="end"
+          class="mono faint"
+          font-size="10">
+      TYPESCRIPT
+    </text>
+
+    <line x1="30" y1="535"
+          x2="770" y2="535"
           stroke="#34363A"/>
 
-    <g font-family="Consolas, monospace"
-       font-size="12">
+    <!-- LINE NUMBERS -->
 
-      <text x="48" y="548">
-        <tspan fill="#A8ADB6">const</tspan>
+    <g class="mono"
+       font-size="10"
+       fill="#656A73"
+       text-anchor="end">
+      <text x="56" y="561">1</text>
+      <text x="56" y="580">2</text>
+      <text x="56" y="599">3</text>
+      <text x="56" y="618">4</text>
+      <text x="56" y="637">5</text>
+    </g>
+
+    <line x1="68" y1="545"
+          x2="68" y2="643"
+          stroke="#34363A"/>
+
+    <!-- SOURCE CODE -->
+
+    <g class="mono" font-size="12">
+
+      <text x="80" y="561">
+        <tspan fill="#B7A6D5">const</tspan>
         <tspan fill="#E4E5E7"> developer = {</tspan>
       </text>
 
-      <text x="68" y="567">
+      <text x="100" y="580">
         <tspan fill="#BFC2C8">name:</tspan>
         <tspan fill="#A8C5B4"> "Carol Hew"</tspan>
         <tspan fill="#E4E5E7">,</tspan>
       </text>
 
-      <text x="68" y="586">
-        <tspan fill="#BFC2C8">role:</tspan>
-        <tspan fill="#A8C5B4"> "Software Engineering Student"</tspan>
+      <text x="100" y="599">
+        <tspan fill="#BFC2C8">specialization:</tspan>
+        <tspan fill="#A8C5B4"> "Software Engineering"</tspan>
         <tspan fill="#E4E5E7">,</tspan>
       </text>
 
-      <text x="68" y="605">
+      <text x="100" y="618">
         <tspan fill="#BFC2C8">status:</tspan>
         <tspan fill="#A8C5B4"> "Learning, building, evolving"</tspan>
       </text>
 
-      <text x="48" y="624"
+      <text x="80" y="637"
             fill="#E4E5E7">
         };
       </text>
 
     </g>
 
-    <rect x="74" y="612"
-          width="7" height="13"
+    <!-- BLINKING EDITOR CURSOR -->
+
+    <rect class="cursor"
+          x="101" y="624"
+          width="7" height="14"
           rx="1"
           fill="#A8C5B4">
-
       <animate attributeName="opacity"
-               values="1;0;1"
-               dur="1.1s"
+               values="1;1;0;0;1"
+               keyTimes="0;0.45;0.5;0.95;1"
+               dur="1.2s"
                repeatCount="indefinite"/>
-
     </rect>
 
   </g>
 
-  <text x="30" y="649"
+  <!-- 03 / TECHNICAL CAPABILITIES -->
+
+  <g class="reveal">
+
+    <animate attributeName="opacity"
+             from="0" to="1"
+             begin="3.2s"
+             dur="0.7s"
+             fill="freeze"/>
+
+    <text x="30" y="689"
+          class="mono faint"
+          font-size="11">
+      03 / TECHNICAL CAPABILITIES
+    </text>
+
+    <circle cx="668" cy="685"
+            r="3" fill="#A8C5B4">
+      <animate attributeName="opacity"
+               values="1;0.25;1"
+               dur="2.4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <text x="770" y="689"
+          text-anchor="end"
+          class="mono green"
+          font-size="10">
+      STACK LOADED
+    </text>
+
+    <!-- LANGUAGES -->
+
+    <g class="reveal">
+
+      <animate attributeName="opacity"
+               from="0" to="1"
+               begin="3.35s"
+               dur="0.55s"
+               fill="freeze"/>
+
+      <rect class="panel"
+            x="30" y="708"
+            width="357" height="140"
+            rx="13"/>
+
+      <circle cx="49" cy="731"
+              r="4" fill="#A8C5B4"/>
+
+      <text x="63" y="735"
+            class="mono white"
+            font-size="12"
+            font-weight="bold">
+        LANGUAGES
+      </text>
+
+      <text x="367" y="735"
+            class="mono faint"
+            text-anchor="end"
+            font-size="10">
+        07
+      </text>
+
+      <line x1="48" y1="750"
+            x2="369" y2="750"
+            stroke="#34363A"/>
+
+      <g class="chip-text">
+        <rect class="chip" x="48" y="764" width="70" height="27" rx="7"/>
+        <text x="83" y="782">Python</text>
+
+        <rect class="chip" x="126" y="764" width="65" height="27" rx="7"/>
+        <text x="158.5" y="782">Java</text>
+
+        <rect class="chip" x="199" y="764" width="86" height="27" rx="7"/>
+        <text x="242" y="782">JavaScript</text>
+
+        <rect class="chip" x="293" y="764" width="76" height="27" rx="7"/>
+        <text x="331" y="782">TypeScript</text>
+
+        <rect class="chip" x="48" y="801" width="61" height="27" rx="7"/>
+        <text x="78.5" y="819">PHP</text>
+
+        <rect class="chip" x="117" y="801" width="61" height="27" rx="7"/>
+        <text x="147.5" y="819">C++</text>
+
+        <rect class="chip" x="186" y="801" width="65" height="27" rx="7"/>
+        <text x="218.5" y="819">Dart</text>
+      </g>
+
+    </g>
+
+    <!-- WEB & FRAMEWORKS -->
+
+    <g class="reveal">
+
+      <animate attributeName="opacity"
+               from="0" to="1"
+               begin="3.6s"
+               dur="0.55s"
+               fill="freeze"/>
+
+      <rect class="panel"
+            x="403" y="708"
+            width="367" height="140"
+            rx="13"/>
+
+      <circle cx="422" cy="731"
+              r="4" fill="#A8C5B4"/>
+
+      <text x="436" y="735"
+            class="mono white"
+            font-size="12"
+            font-weight="bold">
+        WEB &amp; FRAMEWORKS
+      </text>
+
+      <text x="750" y="735"
+            class="mono faint"
+            text-anchor="end"
+            font-size="10">
+        08
+      </text>
+
+      <line x1="421" y1="750"
+            x2="752" y2="750"
+            stroke="#34363A"/>
+
+      <g class="chip-text">
+        <rect class="chip" x="421" y="764" width="65" height="27" rx="7"/>
+        <text x="453.5" y="782">React</text>
+
+        <rect class="chip" x="494" y="764" width="76" height="27" rx="7"/>
+        <text x="532" y="782">Next.js</text>
+
+        <rect class="chip" x="578" y="764" width="72" height="27" rx="7"/>
+        <text x="614" y="782">Spring</text>
+
+        <rect class="chip" x="658" y="764" width="94" height="27" rx="7"/>
+        <text x="705" y="782">Flutter</text>
+
+        <rect class="chip" x="421" y="801" width="65" height="27" rx="7"/>
+        <text x="453.5" y="819">HTML</text>
+
+        <rect class="chip" x="494" y="801" width="55" height="27" rx="7"/>
+        <text x="521.5" y="819">CSS</text>
+
+        <rect class="chip" x="557" y="801" width="95" height="27" rx="7"/>
+        <text x="604.5" y="819">Tailwind CSS</text>
+
+        <rect class="chip" x="660" y="801" width="68" height="27" rx="7"/>
+        <text x="694" y="819">Vite</text>
+      </g>
+
+    </g>
+
+    <!-- DATABASES & SERVICES -->
+
+    <g class="reveal">
+
+      <animate attributeName="opacity"
+               from="0" to="1"
+               begin="3.85s"
+               dur="0.55s"
+               fill="freeze"/>
+
+      <rect class="panel"
+            x="30" y="864"
+            width="357" height="140"
+            rx="13"/>
+
+      <circle cx="49" cy="887"
+              r="4" fill="#A8C5B4"/>
+
+      <text x="63" y="891"
+            class="mono white"
+            font-size="12"
+            font-weight="bold">
+        DATABASES &amp; SERVICES
+      </text>
+
+      <text x="367" y="891"
+            class="mono faint"
+            text-anchor="end"
+            font-size="10">
+        04
+      </text>
+
+      <line x1="48" y1="906"
+            x2="369" y2="906"
+            stroke="#34363A"/>
+
+      <g class="chip-text">
+        <rect class="chip" x="48" y="920" width="73" height="27" rx="7"/>
+        <text x="84.5" y="938">MySQL</text>
+
+        <rect class="chip" x="129" y="920" width="70" height="27" rx="7"/>
+        <text x="164" y="938">SQLite</text>
+
+        <rect class="chip" x="207" y="920" width="91" height="27" rx="7"/>
+        <text x="252.5" y="938">MongoDB</text>
+
+        <rect class="chip" x="48" y="957" width="86" height="27" rx="7"/>
+        <text x="91" y="975">Firebase</text>
+      </g>
+
+    </g>
+
+    <!-- DEVELOPMENT TOOLS -->
+
+    <g class="reveal">
+
+      <animate attributeName="opacity"
+               from="0" to="1"
+               begin="4.1s"
+               dur="0.55s"
+               fill="freeze"/>
+
+      <rect class="panel"
+            x="403" y="864"
+            width="367" height="140"
+            rx="13"/>
+
+      <circle cx="422" cy="887"
+              r="4" fill="#A8C5B4"/>
+
+      <text x="436" y="891"
+            class="mono white"
+            font-size="12"
+            font-weight="bold">
+        DEVELOPMENT TOOLS
+      </text>
+
+      <text x="750" y="891"
+            class="mono faint"
+            text-anchor="end"
+            font-size="10">
+        06
+      </text>
+
+      <line x1="421" y1="906"
+            x2="752" y2="906"
+            stroke="#34363A"/>
+
+      <g class="chip-text">
+        <rect class="chip" x="421" y="920" width="55" height="27" rx="7"/>
+        <text x="448.5" y="938">Git</text>
+
+        <rect class="chip" x="484" y="920" width="70" height="27" rx="7"/>
+        <text x="519" y="938">GitLab</text>
+
+        <rect class="chip" x="562" y="920" width="70" height="27" rx="7"/>
+        <text x="597" y="938">Figma</text>
+
+        <rect class="chip" x="640" y="920" width="70" height="27" rx="7"/>
+        <text x="675" y="938">Notion</text>
+
+        <rect class="chip" x="421" y="957" width="86" height="27" rx="7"/>
+        <text x="464" y="975">Postman</text>
+
+        <rect class="chip" x="515" y="957" width="65" height="27" rx="7"/>
+        <text x="547.5" y="975">AWS</text>
+      </g>
+
+    </g>
+
+  </g>
+
+  <!-- FOOTER -->
+
+  <line x1="30" y1="1026"
+        x2="770" y2="1026"
+        stroke="#34363B"/>
+
+  <text x="30" y="1048"
         class="mono faint"
-        font-size="9">
+        font-size="10">
     CAROL.AI / PROFILE INITIALIZED
   </text>
 
-  <g>
+  <!-- LOADING / SYSTEM STATUS -->
 
-    <text x="770" y="649"
-          text-anchor="end"
-          class="mono green"
-          font-size="9">
-      SYSTEM READY
+  <rect x="516" y="1039"
+        width="100" height="3"
+        rx="1.5" fill="#303539"/>
 
-      <animate attributeName="opacity"
-               values="0.55;1;0.55"
-               dur="3s"
-               repeatCount="indefinite"/>
+  <rect class="progress"
+        x="516" y="1039"
+        width="0" height="3"
+        rx="1.5" fill="#A8C5B4">
+    <animate attributeName="width"
+             from="0" to="100"
+             begin="3.4s"
+             dur="1.4s"
+             fill="freeze"/>
+  </rect>
 
-    </text>
+  <circle cx="669" cy="1044"
+          r="3" fill="#A8C5B4">
+    <animate attributeName="opacity"
+             values="1;0.35;1"
+             dur="2.5s"
+             repeatCount="indefinite"/>
+  </circle>
 
-  </g>
+  <text x="770" y="1048"
+        text-anchor="end"
+        class="mono green"
+        font-size="10">
+    SYSTEM READY
+    <animate attributeName="opacity"
+             values="0.65;1;0.65"
+             dur="3s"
+             repeatCount="indefinite"/>
+  </text>
 
 </svg>
